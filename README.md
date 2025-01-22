@@ -1,4 +1,4 @@
-# QuantumNet_Network_Attack
+# Black Hole Quantum Attack
 
 ## Visão Geral
 Esse repositório tem como objetivo estudar o comportamento de Black Holes Attacks em redes quânticas. Ele comporta experimentos de diferentes métricas e topologias afim de encontrar suas características em cenários distintos.
