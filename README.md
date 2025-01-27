@@ -42,3 +42,47 @@ O repositório contém os diretórios: BHA_functions, Examples, Graphics, Simula
 - ``Graphics``: Diretório voltado a guardar os gráficos dos experimentos
 - ``Simulations``: Diretório encarregado de guardar as simulações
 - ``Simulations_Data``: Diretório focado em guardar os dados dos experimentos
+
+## Organização de Dependências
+
+Essas são as principais dependências do projeto, utilizando o gerenciador de pacotes pip torna-se o suficiente para baixar todas. 
+
+### Recomendações
+
+Recomenda-se utilizar alguma interface python de ambiente virtualizado, exemplos são: venv, virtualenv, conda e etc...
+
+Caso opte por não utilizar um ambiente virtual de python, substitua o comando **pip** por **pip3** ou como está definido no _PATH_ do seu sistema.
+
+### Exemplo utilizando venv
+
+O próprio python ao ser instalado traz consigo a capacidade de criar _virtual envarioments_ (ambientes virtuais python), por isso, utilizarei **venv** como exemplo.
+
+Utilize o instalador de pacotes da sua distribuição linux, no caso, utlizarei a distribuição Ubuntu como exemplo e baixarei a versão 3.12 do python.
+
+`sudo apt-get install python3.12-venv`
+
+Agora utilzamos o python para criar a venv (virtual envarioment)
+
+Utilize o **python** e o **pip** com o nome que está definido no _PATH_ do seu sistema, em geral, ele tende a ter o nome de **python3** e **pip3** em distribuições linux.
+
+`python3 -m venv .venv`
+
+Esse comando criará um diretório chamado de ".venv", o qual está a versão do python definida anteriormente
+
+Por fim, é necessário ativar a venv com o comando `source`.
+
+`source .venv/bin/activate`
+ 
+ Com esses passos será possível utilizar o python e o pip da venv.
+
+### Dependências
+
+Rode o comando abaixo para conseguir baixar todos os pacotes
+
+`pip install
+matplotlib==3.9.2
+networkx==3.4.2
+pandas==2.2.3
+`
+
+Em caso de preferência, utilizar o comando `pip install -r requirements.txt` o qual irá baixar as dependências descritas no _requirements.txt_ do repositório.
