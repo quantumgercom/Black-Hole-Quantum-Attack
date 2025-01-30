@@ -59,19 +59,25 @@ O próprio python ao ser instalado traz consigo a capacidade de criar _virtual e
 
 Utilize o instalador de pacotes da sua distribuição linux, no caso, utlizarei a distribuição Ubuntu como exemplo e baixarei a versão 3.12 do python.
 
-`sudo apt-get install python3.12-venv`
+```
+sudo apt-get update && sudo apt-get install python3.12-venv
+```
 
 Agora utilzamos o python para criar a venv (virtual envarioment)
 
 Utilize o **python** e o **pip** com o nome que está definido no _PATH_ do seu sistema, em geral, ele tende a ter o nome de **python3** e **pip3** em distribuições linux.
 
-`python3 -m venv .venv`
+```
+python3 -m venv .venv
+```
 
 Esse comando criará um diretório chamado de ".venv", o qual está a versão do python definida anteriormente
 
 Por fim, é necessário ativar a venv com o comando `source`.
 
-`source .venv/bin/activate`
+```
+source .venv/bin/activate
+```
  
  Com esses passos será possível utilizar o python e o pip da venv.
 
@@ -79,22 +85,21 @@ Por fim, é necessário ativar a venv com o comando `source`.
 
 As dependências do repositório são:
 
-`python >= 3.12
-matplotlib==3.9.2
-networkx==3.4.2
-pandas==2.2.3
-ipykernel==6.29.5`
+```
+python >= 3.12
+matplotlib==3.9.2  
+networkx==3.4.2  
+pandas==2.2.3  
+ipykernel==6.29.5
+```
 
 Utilize o comando `pip install -r requirements.txt` o qual irá baixar as dependências descritas no _requirements.txt_ do repositório.
 
 Em caso de preferência, rode o comando abaixo para baixar todos os pacotes manualmente.
 
-`pip install
-matplotlib==3.9.2
-networkx==3.4.2
-pandas==2.2.3
-ipykernel==6.29.5
-`
+```
+pip install matplotlib==3.9.2 networkx==3.4.2 pandas==2.2.3 ipykernel==6.29.5
+```
 
 ## Execução das simulações
 
