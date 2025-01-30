@@ -1,7 +1,12 @@
-# Black Hole Quantum Attack
+# Redes Quânticas Sob Ataque: Black Hole Repeaters
 
-## Redes Quânticas Sob Ataque: Black Hole Repeaters
-Esse repositório está vinculado ao artigo "Redes Quânticas Sob Ataque: Black Hole Repeaters" e tem como objetivo estudar o comportamento de Black Holes Attacks em redes quânticas. Ele comporta experimentos de diferentes métricas e topologias a fim de encontrar suas características em cenários distintos com uma modelagem de um possíveis ataques de _Black Holes_.
+## Resumo do Artigo
+
+Esse repositório está vinculado ao artigo "Redes Quânticas Sob Ataque: Black Hole Repeaters" e tem como objetivo estudar o comportamento de Black Holes Attacks em redes quânticas. Ele comporta experimentos de diferentes métricas e topologias a fim de encontrar suas características em cenários distintos com uma modelagem de possíveis ataques _Black Holes_.
+
+Os experimentos são uma forma de simular possíveis implementações de redes quânticas na vida real utilizando diferentes topologias de criação. Por meio dessa modelagem é possível avaliar meios de ataque e possíveis formas de identificação dos mesmos.
+
+Além disso, esse artigo visa entender melhor como redes distintas lidam com esse tipo de atque que apresenta um comportamento discreto e com uma alta dificuldade no seu reconhecimento. Essa falta de conhecimento pode ocasionar em um aumento dos gastos de recursos em redes quânticas de entanglement swapping e, em casos mais severos, pode exaurir os caros recursos quânticos, inviabilizando todos os serviços da rede.
 
 ## Avisos
 
