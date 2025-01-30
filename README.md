@@ -68,7 +68,7 @@ Utilize o instalador de pacotes da sua distribuição linux, no caso, utlizarei 
 sudo apt-get update && sudo apt-get install python3.12-venv
 ```
 
-Agora utilzamos o python para criar a venv (virtual envarioment)
+Agora utilzamos o python para criar a venv (virtual envarioment).
 
 Utilize o **python** e o **pip** com o nome que está definido no _PATH_ do seu sistema, em geral, ele tende a ter o nome de **python3** e **pip3** em distribuições linux.
 
@@ -76,7 +76,7 @@ Utilize o **python** e o **pip** com o nome que está definido no _PATH_ do seu 
 python3 -m venv .venv
 ```
 
-Esse comando criará um diretório chamado de ".venv", o qual está a versão do python definida anteriormente
+Esse comando criará um diretório chamado de ".venv", o qual está a versão do python definida anteriormente.
 
 Por fim, é necessário ativar a venv com o comando `source`.
 
@@ -113,6 +113,12 @@ As simulações ficam dentro do repositório `Simulations/` e nelas será possí
 ### Como utilizar o notebook
 
 Para a utilização do código, é necessário a execução das células na ordem em que elas aparecem e com isso será possível analisar os resultados dos experimentos.
+
+As células irão executar e demandarão um certo tempo para isso, com o passar das simulações isso vai demonstrar-se lento, mas é o esperado. Logo, um alto tempo de espera em células que estão rodando as simulações não deve causar espanto.
+
+Caso esteja utilizando o _Jupyter Notebook_ ou a extensão dele para o programa _Visual Studio Code (VSCode)_, existe a opção de rodar todas as células de uma vez de forma automática. Esse botão irá executar as células em ordem e de forma totalmente autônoma evitando ter que esperar o código de cada célula finalizar para executar a próxima manualmente.
+
+### Recomendação de Execução
 
 É importante lembrar que algumas simulações podem demorar mais de 3 horas em caso de computadores mais fracos. Caso conheça mais do seu sistema, é possível mudar o parâmetro **CORES** dentro do notebook para utilizar mais processos em paralelo. Porém, evite utilizar 100% das Threads do seu sistema, recomenda-se utilizar no máximo o _total de Threads do sistema - 2_, para evitar que o sistema operacional dê alguma falha.
 
