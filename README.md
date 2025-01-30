@@ -58,7 +58,7 @@ Kernel: 6.9.3-76060903-generic
 DE: GNOME 42.9
 CPU: AMD Ryzen 5 5600G with Radeon Graphics (12) @ 4.464GHz
 Memory: 16 GB RAM DDR4 3200MHz
-Python: 3.12.0
+Python: 3.12.8
 ```
 
 ## Organização de Dependências
@@ -71,40 +71,47 @@ Recomenda-se utilizar alguma interface python de ambiente virtualizado, exemplos
 
 Caso opte por não utilizar um ambiente virtual de python, substitua o comando **pip** por **pip3** ou como está definido no _PATH_ do seu sistema.
 
-### Exemplo utilizando venv
+### Exemplo utilizando conda
 
-O próprio python ao ser instalado traz consigo a capacidade de criar _virtual envarioments_ (ambientes virtuais python), por isso, utilizarei **venv** como exemplo.
-
-Utilize o instalador de pacotes da sua distribuição linux, no caso, utlizarei a distribuição Ubuntu como exemplo e baixarei a versão 3.12 do python.
-
-```
-sudo apt-get update && sudo apt-get install python3.12-venv
-```
-
-Agora utilzamos o python para criar a venv (virtual envarioment).
-
-Utilize o **python** e o **pip** com o nome que está definido no _PATH_ do seu sistema, em geral, ele tende a ter o nome de **python3** e **pip3** em distribuições linux.
+O próprio python ao ser instalado traz consigo a capacidade de criar _virtual envarioments_ (ambientes virtuais python), entretanto, utilizarei **conda**, especificamente o miniconda como exemplo.
+Utilize os passos a seguir para conseguir baixar para a sua distribuição, no caso, utlizarei a distribuição Ubuntu como exemplo e baixarei a versão 3.12 do python pelo terminal.
 
 ```
-python3 -m venv .venv
+mkdir -p ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm ~/miniconda3/miniconda.sh
 ```
 
-Esse comando criará um diretório chamado de ".venv", o qual está a versão do python definida anteriormente.
-
-Por fim, é necessário ativar a venv com o comando `source`.
+Agora ativamos o _PATH_ do conda no terminal atual com o comando `source`. Não esquecer de sempre utilizar esse comando quando abrir um novo terminal para conseguir utilizar os comandos do conda.
 
 ```
-source .venv/bin/activate
+source ~/miniconda3/bin/activate
 ```
+
+Em segui, usaremos o conda para criar uma envarioment (_ENV_) com o python 3.12.8 e a ativaremos.
+
+```
+conda create --name BHA python=3.12.8
+conda activate BHA # Ativa o ambiente chamado BHA
+```
+
+ Com esses passos será possível utilizar o python e o pip do ambiente virtual.
+
+ Caso queira desativar a _ENV_ basta utilizar o comando:
  
- Com esses passos será possível utilizar o python e o pip da venv.
+ ```
+ conda deactivate
+ ```
+
+Para mais detalhes, recomenda-se ler a documentação do [conda](https://docs.anaconda.com/).
 
 ### Dependências
 
 As dependências do repositório são:
 
 ```
-python >= 3.12
+python >= 3.12.8
 matplotlib==3.9.2  
 networkx==3.4.2  
 pandas==2.2.3  
