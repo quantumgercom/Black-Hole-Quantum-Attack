@@ -48,6 +48,19 @@ O repositório contém os diretórios: BHA_functions, Examples, Graphics, Simula
 - ``Simulations``: Diretório encarregado de guardar as simulações
 - ``Simulations_Data``: Diretório focado em guardar os dados dos experimentos
 
+## Sistema utilizado
+
+ Para esse repositório foi utilizado um _Hardware_ com as seguintes configurações:
+
+ ```
+OS: Pop!_OS 22.04 LTS x86_64
+Kernel: 6.9.3-76060903-generic
+DE: GNOME 42.9
+CPU: AMD Ryzen 5 5600G with Radeon Graphics (12) @ 4.464GHz
+Memory: 16 GB RAM DDR4 3200MHz
+Python: 3.12.0
+```
+
 ## Organização de Dependências
 
 Essas são as principais dependências do projeto, utilizando o gerenciador de pacotes pip torna-se o suficiente para baixar todas. 
