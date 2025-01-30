@@ -1,7 +1,7 @@
 # Black Hole Quantum Attack
 
-## Visão Geral
-Esse repositório tem como objetivo estudar o comportamento de Black Holes Attacks em redes quânticas. Ele comporta experimentos de diferentes métricas e topologias afim de encontrar suas características em cenários distintos.
+## Redes Quânticas Sob Ataque: Black Hole Repeaters
+Esse repositório está vinculado ao artigo "Redes Quânticas Sob Ataque: Black Hole Repeaters" e tem como objetivo estudar o comportamento de Black Holes Attacks em redes quânticas. Ele comporta experimentos de diferentes métricas e topologias a fim de encontrar suas características em cenários distintos com uma modelagem de um possíveis ataques de _Black Holes_.
 
 ## Avisos
 
@@ -77,12 +77,36 @@ Por fim, é necessário ativar a venv com o comando `source`.
 
 ### Dependências
 
-Rode o comando abaixo para conseguir baixar todos os pacotes
+As dependências do repositório são:
+
+`python >= 3.12
+matplotlib==3.9.2
+networkx==3.4.2
+pandas==2.2.3
+ipykernel==6.29.5`
+
+Utilize o comando `pip install -r requirements.txt` o qual irá baixar as dependências descritas no _requirements.txt_ do repositório.
+
+Em caso de preferência, rode o comando abaixo para baixar todos os pacotes manualmente.
 
 `pip install
 matplotlib==3.9.2
 networkx==3.4.2
 pandas==2.2.3
+ipykernel==6.29.5
 `
 
-Em caso de preferência, utilizar o comando `pip install -r requirements.txt` o qual irá baixar as dependências descritas no _requirements.txt_ do repositório.
+## Execução das simulações
+
+As simulações ficam dentro do repositório `Simulations/` e nelas será possível acessar os notebooks necessários para a utilização dos códigos.
+
+### Como utilizar o notebook
+
+Para a utilização do código, é necessário a execução das células na ordem em que elas aparecem e com isso será possível analisar os resultados dos experimentos.
+
+É importante lembrar que algumas simulações podem demorar mais de 3 horas em caso de computadores mais fracos. Caso conheça mais do seu sistema, é possível mudar o parâmetro **CORES** dentro do notebook para utilizar mais processos em paralelo. Porém, evite utilizar 100% das Threads do seu sistema, recomenda-se utilizar no máximo o _total de Threads do sistema - 2_, para evitar que o sistema operacional dê alguma falha.
+
+![CORES3](https://github.com/user-attachments/assets/9870fcdf-da8a-4a3b-86fd-bbbc72b59bef)
+
+
+
